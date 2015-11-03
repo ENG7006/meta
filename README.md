@@ -15,3 +15,7 @@ This repository will be the hub for the various "Media Practice" (digital humani
 [p5.js reference](http://p5js.org/reference/)
 
 [Dan Shiffman's p5.js YouTube Videos](http://bit.ly/1k1ErgO)
+
+[p5.js Forum on Processing.org](https://forum.processing.org/two/categories/p5-js)
+
+[Processing Forum on Reddit](http://reddit.com/r/processing/)
