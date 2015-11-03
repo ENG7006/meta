@@ -11,5 +11,7 @@ This repository will be the hub for the various "Media Practice" (digital humani
 
 #### p5.js
 [p5.js website: front page](http://p5js.org/)
+
 [p5.js reference](http://p5js.org/reference/)
+
 [Dan Shiffman's p5.js YouTube Videos](http://bit.ly/1k1ErgO)
