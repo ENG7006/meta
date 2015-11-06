@@ -17,12 +17,22 @@
 * [Learning GitHub resources](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 * [GitHub Pages](https://pages.github.com/)
 * [Sample GitHub class](https://github.com/advanced-js)
+* [GitHub markdown basics](https://help.github.com/articles/markdown-basics/)
 
 ### Coding // Thinking about Code
 * [How I learned to code, after failing](http://www.theatlantic.com/technology/archive/2011/06/how-i-failed-failed-and-finally-succeeded-at-learning-how-to-code/239855/)
 * [What is Code?](http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 * [Thoughtbot Rules for Code](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
 * [Tell, Don't Ask](https://pragprog.com/articles/tell-dont-ask): "Procedural code gets information then makes decisions. Object-oriented code tells objects to do things."
+* [Podcast with Sandi Metz](https://devchat.tv/ruby-rogues/087-rr-book-clubpractical-object-oriented-design-in-ruby-with-sandi-metz)
+* [Sandi Metz's Website](http://sandimetz.com)
+
+### JavaScript specific resources
+* [Mozilla's Intro to Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+* [Superhero.js](http://superherojs.com/)
+* [Upcase JavaScript (thoughtbot lesson)](https://upcase.com/javascript)
+* [JavaScript The Right Way](http://www.jstherightway.org/)
+* [Learning JavaScript in 2015/16](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225)
 
 
 ### Others // Other Syllabi
