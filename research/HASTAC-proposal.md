@@ -1,4 +1,5 @@
-# Teaching Critical Making: Digital Humanities, Coding Pedagogy, and New Media Arts Foundations
+# Teaching Critical Making
+##  Digital Humanities, Coding Pedagogy, and New Media Arts Foundations
 
 *Author*: Scott C. Richmond, Wayne State University (scr@wayne.edu)
 

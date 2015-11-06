@@ -33,6 +33,7 @@
 * [Upcase JavaScript (thoughtbot lesson)](https://upcase.com/javascript)
 * [JavaScript The Right Way](http://www.jstherightway.org/)
 * [Learning JavaScript in 2015/16](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225)
+* [Browserify (useful for deployment)](http://browserify.org/)
 
 
 ### Others // Other Syllabi
