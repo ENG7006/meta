@@ -35,6 +35,11 @@
 * [Learning JavaScript in 2015/16](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225)
 * [Browserify (useful for deployment)](http://browserify.org/)
 
+#### JavaScript testing information
+[Comparing test suites from Coderwall](https://coderwall.com/p/ntbixw/javascript-test-framework-comparison)
+[Comparing test suites from StackOverflow](http://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd)
+[D.O.H. is one test suite](http://dojotoolkit.org/reference-guide/1.10/util/doh.html)
+
 
 ### Others // Other Syllabi
 * [Jentery Sayers's Intro to DHUM](http://web.uvic.ca/~englblog/150f2015/)
