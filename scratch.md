@@ -44,6 +44,7 @@
 ### Others // Other Syllabi
 * [Jentery Sayers's Intro to DHUM](http://web.uvic.ca/~englblog/150f2015/)
 * [Array has a list of thoughts](http://arrayproject.com)
+* [Not coding, but making: Early Wearables](https://github.com/uvicmakerlab/earlyWearablesKit)
 
 ### Roll my Own: Projects to Build, Assignments to Design
 * Color picker
