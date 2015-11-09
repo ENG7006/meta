@@ -36,6 +36,17 @@
 * [Browserify (useful for deployment)](http://browserify.org/)
 * [Prototype.js: Getting better inheritance](http://prototypejs.org/)
 
+
+#### CoffeeScript
+This time around, we're going to use JavaScript, but I can tell I'll be much more comfortable in CoffeeScript, coming from Ruby
+* [To try: CoffeeScript](http://coffeescript.org)
+* [Absolute Beginner's Guide to CoffeeScript](http://blog.teamtreehouse.com/the-absolute-beginners-guide-to-coffeescript)
+* [Resources for Learning CoffeeScript](http://jennifermann.ghost.io/resources-for-learning-coffeescript/)
+* [The Little Book on CoffeeScript](https://arcturo.github.io/library/coffeescript/index.html)
+* [Smooth CoffeeScript](https://autotelicum.github.io/Smooth-CoffeeScript/)
+* [CoffeeScript Source Maps](http://ryanflorence.com/2012/coffeescript-source-maps/)
+* [Should You Learn CoffeeScript?](http://code.tutsplus.com/articles/should-you-learn-coffeescript--net-23206)
+
 #### JavaScript testing information
 * [Comparing test suites from Coderwall](https://coderwall.com/p/ntbixw/javascript-test-framework-comparison)
 * [Comparing test suites from StackOverflow](http://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd)
