@@ -1,7 +1,7 @@
 # Teaching Critical Making
 ##  Digital Humanities, Coding Pedagogy, and New Media Arts Foundations
 
-*Author*: Scott C. Richmond, Wayne State University (scr@wayne.edu)
+#### *Author*: Scott C. Richmond, Wayne State University (scr@wayne.edu)
 
 Recently, making has become an important term in digital humanities pedagogy and practice. Obviously, the problem of making and its others (e.g., theory) is not new (it is at least as old as the distinction between *techne* and *episteme*), and how we talk about making as a digital humanities problem has tended to reflect the history of the field in English departments and libraries. What digital things we make in DH has tended to be tools for research or its dissemination; introductory digital humanities coursework often reflects this inheritance. Digital making itself *as* humanistic research is a relative newcomer. We have started to ask what it means to make digital things as a form of research.
 
