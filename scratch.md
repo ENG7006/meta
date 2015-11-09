@@ -36,10 +36,14 @@
 * [Browserify (useful for deployment)](http://browserify.org/)
 
 #### JavaScript testing information
-[Comparing test suites from Coderwall](https://coderwall.com/p/ntbixw/javascript-test-framework-comparison)
-[Comparing test suites from StackOverflow](http://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd)
-[D.O.H. is one test suite](http://dojotoolkit.org/reference-guide/1.10/util/doh.html)
+* [Comparing test suites from Coderwall](https://coderwall.com/p/ntbixw/javascript-test-framework-comparison)
+* [Comparing test suites from StackOverflow](http://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd)
+* [D.O.H. is one test suite](http://dojotoolkit.org/reference-guide/1.10/util/doh.html)
 
+### Alternatives to Blogging
+* [GitHub Pages](https://pages.github.com/)
+* [Prose.io](http://prose.io/)
+* [Jekyll](http://jekyllrb.com/)
 
 ### Others // Other Syllabi
 * [Jentery Sayers's Intro to DHUM](http://web.uvic.ca/~englblog/150f2015/)
