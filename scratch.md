@@ -8,6 +8,7 @@
 * [Kadenze p5.js creative coding course](https://www.kadenze.com/courses/introduction-to-programming-for-the-visual-arts-with-p5-js)
 * [JS Hint for validating code](http://jshint.com/about/)
 * [Arrow Project for Processing/p5.js](https://www.youtube.com/watch?v=uc48nO-RofU)
+* [p5.js Development information](https://github.com/processing/p5.js/wiki/Development)
 
 ### GitHub resources
 * [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
@@ -35,6 +36,7 @@
 * [Learning JavaScript in 2015/16](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225)
 * [Browserify (useful for deployment)](http://browserify.org/)
 * [Prototype.js: Getting better inheritance](http://prototypejs.org/)
+* [JS Style Guide: idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
 
 
 #### CoffeeScript
@@ -51,6 +53,12 @@ This time around, we're going to use JavaScript, but I can tell I'll be much mor
 * [Comparing test suites from Coderwall](https://coderwall.com/p/ntbixw/javascript-test-framework-comparison)
 * [Comparing test suites from StackOverflow](http://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd)
 * [D.O.H. is one test suite](http://dojotoolkit.org/reference-guide/1.10/util/doh.html)
+* [For testing, p5.js uses grunt-mocha](https://github.com/kmiyashiro/grunt-mocha)
+* [Which uses Mocha](https://mochajs.org/)
+* [And Grunt](http://gruntjs.com/getting-started)
+* [And phantom.js](http://phantomjs.org/)
+* [A little mocha-testing howto](http://dailyjs.com/2011/12/08/mocha/)
+
 
 ### Alternatives to Blogging
 * [GitHub Pages](https://pages.github.com/)
