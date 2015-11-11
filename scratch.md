@@ -37,6 +37,8 @@
 * [Browserify (useful for deployment)](http://browserify.org/)
 * [Prototype.js: Getting better inheritance](http://prototypejs.org/)
 * [JS Style Guide: idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
+* [Require.js: use require statements!, simplify life](http://requirejs.org/docs/start.html)
+* [Require may be overkill? Keep it lightweight](http://stackoverflow.com/questions/5168451/javascript-require-on-client-side)
 
 
 #### CoffeeScript
