@@ -65,10 +65,15 @@ This time around, we're going to use JavaScript, but I can tell I'll be much mor
 * [Prose.io](http://prose.io/)
 * [Jekyll](http://jekyllrb.com/)
 
+#### Using Atom to Write // Hacking Atom
+* [Set markdown font to something else](https://github.com/atom/language-gfm/issues/69) NB: Snippet goes in styles.less in .atom
+* [10 Essential Atom Add-ons](http://www.sitepoint.com/10-essential-atom-add-ons/)
+
 ### Others // Other Syllabi
 * [Jentery Sayers's Intro to DHUM](http://web.uvic.ca/~englblog/150f2015/)
 * [Array has a list of thoughts](http://arrayproject.com)
 * [Not coding, but making: Early Wearables](https://github.com/uvicmakerlab/earlyWearablesKit)
+* [p5.js also has some ideas, helpful links, many syllabi](https://github.com/processing/p5.js/wiki/Education)
 
 ### Roll my Own: Projects to Build, Assignments to Design
 * Color picker
@@ -77,3 +82,6 @@ This time around, we're going to use JavaScript, but I can tell I'll be much mor
 * Shape maker + save
 * Bubbles
 * Balls
+* Sine Snakes
+* Copy of *Every Icon*
+* Scenes (support for prototyping *Every Day the Same Dream*)
