@@ -1,0 +1,51 @@
+# 2016/17 GRA Application: Arts & Humanities
+### Scott C. Richmond, Assistant Professor of English (scr@wayne.edu)
+
+#### 1. Project Title
+Project Title: **Creative Coding in the Humanities: Integrating New Media Arts Foundation Pedagogy into Digital Humanities**
+
+#### 2. Project Description
+##### Briefly describe the research project and its significance in no more than one-half of a page.
+This project will adapt pedagogical practices from new media arts foundation courses for humanities students, resulting in the publication and dissemination of lesson plans, support code, and scholarly research. The digital humanities have, with great force, raised the question of the relation between thinking and making, with special reference to *digital* making. This is a relatively recent development in the humanities (the "digital humanities" have been unavoidable only since about 2013), but new media artists have been asking, answering, and teaching about that question for much longer, under the rubric of "creative coding." Because the disciplinary formation of the digital humanities has largely taken place within literature departments, digital humanists have often overlooked insights from the arts—especially in their teaching practices. That said, when new media artists have addressed that question, they have naturally stressed its importance for artistic making. This project seeks to establish a theoretical, and more importantly, pedagogical context in which insights from the arts may inform practices of critical thinking and critical theorizing about digital media.
+
+At a concrete level, this has meant that digital humanities teaching has tended to emphasize computational textual analysis (e.g., the Textual Encoding Initiative and XML), digital research tools (e.g., Zotero), or online platforms for the dissemination of research (e.g. Scalar, or simply  HTML/CSS). Meanwhile, new media arts foundation courses at institutions like the School of the Art Institute of Chicago (SAIC) and the Rhode Island School of Design (RISD) and New York University's Interactive Telecommunications Program (ITP) have been built around a platform Processing (processing.org), a programming environment that radically simplifies the creation of interactive graphics, and designed to address the needs of educators and artists. In graduate-level coursework in Winter semester 2016, I have developed a pilot run of a Processing curriculum tailored to humanities students (implemented in p5.js, a port of Processing from Java to JavaScript). The ongoing research will entail development of a cognate undergraduate curriculum (to be run in AY 2016/17), the writing and refining of support code, the development of assessment methods for ongoing pedagogical research, and the publication of scholarly research not only about pedagogy but also in digital humanities and new media theory. The GRA will emphatically not be performing the duties of a GTA (grading, etc.), but rather will assist in the research and development of support code, pedagogical research methods, writing of grants, and presenting research results.
+
+#### 3. External Training Grants for Student
+#####  Describe plans for the graduate student recipient of the GRA award to apply for an externally-funded graduate fellowship or to be included in an application for a training grant during the time of GRA support. Discuss previous fellowship and training grant efforts.
+This yearlong project will culminate in the submission of a National Endowment for the Humanities Digital Humanities Startup Grant (Level I), which, if funded, will provide continuing funding for the GRA. To support both the student and the startup grant proposal, I will nominate the GRA for the Wayne State Fellowship Writing Bootcamp, and will require him or her to attend the CLAS and/or Department of English grant writing workshops in the humanities. In addition, the professional organization for Digital Humanities, HASTAC, includes two programs to which the student will be required to apply: the HASTAC Scholars program, and the annual HASTAC conference.
+
+#### 4. Benefits to Student
+##### How will the appointed Graduate Research Assistant benefit from this research experience?
+Serving as a GRA will be a professionalizing experience in the digital humanities and new media studies, for PhD students drawn from any of the three concentrations in the Department of English.  The student will be working on digital media in some way in their concentration. Evidently, the student will gain domain-specific research skills in digital humanities, new media studies, and digital pedagogy. Beyond this, I will mentor the student through the process of developing the expertise in JavaScript programming and other digital technologies necessary to design and execute pedagogical support code for humanities students learning in p5.js. The student will also receive training in pedagogical research design, project management, data collection and analysis, and the preparation of grants for national agency funding.
+
+#### 5. PI's Previous Graduate Students
+##### List PI/collaborators’ previous graduate students and their current careers (if known).
+None of the students I have supervised have yet graduated. I served on the dissertation committee (and did substantial mentoring for) Justin Remes, Ph.D., English (Film and Media Studies) 2012, now Assistant Professor of English at Iowa State University. I am currently actively mentoring graduate students either as director or committee member.
+
+#### 6. Previous Publications
+##### List publications in which graduate students are authors/co-authors in the last five years.
+N/A—I have yet to coauthor papers with graduate students. (This is not the norm in my field, although publications arising from this project will be coauthored.)
+
+#### 7. Fostering Training in Interactions
+##### Provide details about how the collaborators will interact with each other and the student to foster training.
+N/A—This is a project with a single PI and no other staff.
+
+#### 8. Other Funding Sources
+##### Indicate other internal and external sources of funding for this project.
+This project has received no other funding, but will result in an application to a national external funding agency.
+
+#### 9. Development of Future Initiatives (Motivated by Strategic Planning?)
+##### How will this project facilitate development of future initiatives motivated by strategic planning?
+The CLAS strategic plan calls for increasing the amount of grant money brought in by faculty (from the draft circulated on 11/18/15: "Maximize the research potential of the faculty," with an emphasis on extramural funding). To be frank (and a little crass), digital humanities projects are more fundable, at higher amounts, than more traditional humanistic research. The NEH's Digital Humanities Startup Grants, Level I include funding of up to $40,000. Given the cluster of faculty in the Department of English working on the digital humanities and new media studies, developing a base-level infrastructure for creative and critical coding pedagogy and research in the digital humanities is likely to increase fundable projects in the Department of English. This sort of curriculum is resource-intensive at startup, but once implemented requires little ongoing maintenance.
+
+#### 10. Number of GRA Positions, Personnel Roles
+##### List the number of GRA positions requested, along with other project participants, and describe role of all personnel in the project.
+I request only one GRA position. The GRA will be the only other personnel on the project. The GRA's role will consist in: assisting in the research of best practices in programming pedagogy from the arts, humanities, and computer science; collaborative design and authoring of reusable and extensible support code; the development of parameters for student coding projects; the preparation of applications for external funding; and the co-authoring of articles. i will serve as the project's principle investigator.
+
+#### 11. Is this a match?
+##### . Are requested GRA’s a match for a new project to be submitted? Identify agency and program.
+N/A—This is not a match for external funding.
+
+#### 12. Opportunities for Undergraduate Research
+##### What opportunities are available for undergraduate participation in the project?
+There are undergraduate research opportunities that will arise out of the undergraduate coursework in creative coding in the humanities. Depending on Department of English course scheduling and student interest, this may or may not happen during the time of the GRA appointment—but the project itself will be ongoing beyond the term of the GRA appointment.

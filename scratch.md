@@ -62,10 +62,12 @@ This time around, we're going to use JavaScript, but I can tell I'll be much mor
 * [A little mocha-testing howto](http://dailyjs.com/2011/12/08/mocha/)
 
 
-### Alternatives to Blogging
+### Alternatives to Wordpress
 * [GitHub Pages](https://pages.github.com/)
 * [Prose.io](http://prose.io/)
 * [Jekyll](http://jekyllrb.com/)
+* [Jekyll Themes](http://jekyllthemes.org/), [More Jekyll Themes](http://jekyllthemes.io/)
+* [Jekyll Now](http://www.jekyllnow.com/)
 
 #### Using Atom to Write // Hacking Atom
 * [Set markdown font to something else](https://github.com/atom/language-gfm/issues/69) NB: Snippet goes in styles.less in .atom
