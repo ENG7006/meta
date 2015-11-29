@@ -16,6 +16,7 @@
   * Atom
   * p5.js IDE
 * Beginning p5.js: Drawing and parameters
+* Shiffman p5.js videos 1.0–1.3
 
 #### Week 2
 ##### Seminar: Walter Benjamin, Film + Media
@@ -25,7 +26,7 @@
 
 ##### Lab: p5.js Basics
 * Constructing and variables: Balls, Bubbles
-* Shiffman p5.js videos 1.0–1.3
+
 
 #### Week 3
 ##### Seminar: Marshall McLuhan: OG Media Theorist
@@ -130,7 +131,7 @@ And then either:
 #### Week 14
 ##### Seminar: Atmospheres and Clouds
 * Tung Hui-hu, from *A Prehistory of the Cloud*
-* James J. Hodge, "Gifts of Ubuiquity" and "Sociable Media"
+* James J. Hodge, "Gifts of Ubiquity" and "Sociable Media"
 
 ##### Lab: Drop-in lab
 

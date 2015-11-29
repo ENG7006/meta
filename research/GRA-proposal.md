@@ -2,7 +2,7 @@
 ### Scott C. Richmond, Assistant Professor of English (scr@wayne.edu)
 
 #### 1. Project Title
-Project Title: **Creative Coding in the Humanities: Integrating New Media Arts Foundation Pedagogy into Digital Humanities**
+Project Title: **Creative Coding and Critical Making in the Humanities: Integrating New Media Arts Foundation Pedagogy into Digital Humanities**
 
 #### 2. Project Description
 ##### Briefly describe the research project and its significance in no more than one-half of a page.
