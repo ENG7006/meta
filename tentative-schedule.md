@@ -24,13 +24,15 @@
 * Miriam Bratu Hansen, "Room-for-Play"
 * Mark B. N. Hansen, "On Some Motifs in Benjamin"
 
-##### Lab: p5.js Basics
-* Constructing and variables: Balls, Bubbles
+##### Lab: p5.js and JavaScript Basics
+* Constructing, variables, methods: Balls
 
 
 #### Week 3
 ##### Seminar: Marshall McLuhan: OG Media Theorist
 * Marshall McLuhan, *Understanding Media*, Part 1 and selections from Part 2.
+
+##### Lab: p5.
 
 #### Week 4
 ##### Seminar: Friedrich Kittler: Beyond Representation
