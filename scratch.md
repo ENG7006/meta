@@ -72,6 +72,7 @@ This time around, we're going to use JavaScript, but I can tell I'll be much mor
 #### Using Atom to Write // Hacking Atom
 * [Set markdown font to something else](https://github.com/atom/language-gfm/issues/69) NB: Snippet goes in styles.less in .atom
 * [10 Essential Atom Add-ons](http://www.sitepoint.com/10-essential-atom-add-ons/)
+* [Sync Settings for Atom](https://atom.io/packages/sync-settings)
 
 ### Others // Other Syllabi
 * [Jentery Sayers's Intro to DHUM](http://web.uvic.ca/~englblog/150f2015/)
