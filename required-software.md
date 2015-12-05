@@ -39,7 +39,7 @@ First, install a Ruby that is *not* the Ruby that comes with the system:
 * ```echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
 source ~/.bash_profile``` (This sets the terminal environment properly so rbenv works properly.)
 * ```rbenv install 2.2.3``` (This actually installs Ruby, which will take a minute.)
-* ```rbenv globcal 2.2.3``` (This sets the version of Ruby to use as 2.2.3, instead of the system version.)
+* ```rbenv global 2.2.3``` (This sets the version of Ruby to use as 2.2.3, instead of the system version.)
 * Next, type ```ruby -v```, and it should come up ```ruby 2.2.3``` and then a bunch of other stuff. If not, oy.
 
 (Note that for other users on the machine, installing Ruby 2.2.3, which takes a while, will be a separate process. So will setting their ```.bash_profile``` file. [Meh.])
@@ -47,3 +47,11 @@ source ~/.bash_profile``` (This sets the terminal environment properly so rbenv 
 Now, we can install Jekyll, making sure that we're still logged in as Student:
 * ```gem install jekyll```
 * To make sure it installed properly, open a new terminal window (cmd-N) or tab (cmd-T) and type ```jekyll```. This should give you a whole bunch of output that starts by complaining that you didn't tell it to do anything.
+
+The good thing about this is that we can install some of our other software this way in more proper ways:
+* ```brew install node```
+* ```brew install heroku-toolbelt```
+
+(Although actually, I might put this off if/until we get to node, and heroku deployment.)
+
+(Although actually actually, I think I just wrote a shell script or two that do[es] all the things.)
