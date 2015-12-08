@@ -40,10 +40,10 @@ The CLAS strategic plan calls for increasing the amount of grant money brought i
 
 #### 10. Number of GRA Positions, Personnel Roles
 ##### List the number of GRA positions requested, along with other project participants, and describe role of all personnel in the project.
-I request only one GRA position. The GRA will be the only other personnel on the project. The GRA's role will consist in: assisting in the research of best practices in programming pedagogy from the arts, humanities, and computer science; collaborative design and authoring of reusable and extensible support code; collaborative design and authoring of testing software and aspects of a development environment for humanities coding; the development of parameters for student coding projects; the preparation of applications for external funding; and the co-authoring of articles in digital pedagogy and new media theory. i will serve as the project's principle investigator.
+I request only one GRA position. The GRA will be the only other personnel on the project. The GRA's role will consist in: assisting in the research of best practices in programming pedagogy from the arts, humanities, and computer science; collaborative design and authoring of reusable and extensible support code; collaborative design and authoring of testing software and aspects of a development environment for humanities coding; the development of parameters for student coding projects; the preparation of applications for external funding; and the co-authoring of articles in digital pedagogy and new media theory. I will serve as the project's principle investigator.
 
 #### 11. Is this a match?
-##### . Are requested GRA’s a match for a new project to be submitted? Identify agency and program.
+##### Are requested GRA’s a match for a new project to be submitted? Identify agency and program.
 N/A—This is not a match for external funding.
 
 #### 12. Opportunities for Undergraduate Research
