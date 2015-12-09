@@ -1,8 +1,21 @@
 #!/bin/sh
-
 # set up our sudo
-echo "Installing ENG 7006 software. First, we'll need an administrator password:"
-sudo echo "Thanks! Running script."
+echo "Installing ENG 7006 software. This script will need just a little bit of babysitting, but it shouldn't take long. Let's start with an administrator password."
+
+sudo echo "Starting install scripts."
+
+# install the xcode cli tools, and a little applescript to avoid having to click buttons
+echo "Installing XCode CLI tools."
+xcode-select --install
+sleep 1
+osascript <<EOD
+  tell application "System Events"
+    tell process "Install Command Line Developer Tools"
+      keystroke return
+      click button "Agree" of window "License Agreement"
+    end tell
+  end tell
+EOD
 
 # download and install Homebrew
 echo "Installing Homebrew."
@@ -25,19 +38,6 @@ brew cask install slack
 echo "Installing p5.js."
 brew cask install p5
 
-# install the xcode cli tools, and a little applescript to avoid having to click buttons
-echo "Installing XCode CLI tools."
-xcode-select --install
-sleep 1
-osascript <<EOD
-  tell application "System Events"
-    tell process "Install Command Line Developer Tools"
-      keystroke return
-      click button "Agree" of window "License Agreement"
-    end tell
-  end tell
-EOD
-
 # install rbenv
 echo "Installing rbenv and ruby-build."
 brew install rbenv ruby-build
@@ -54,7 +54,7 @@ echo "Installing the Heroku Toolbelt."
 brew install heroku-toolbelt
 
 echo "Copying scripts to student user."
-cp ./student-install-software-ENG7006 /Users/student/
+sudo cp ./student-install-software-ENG7006 /Users/student/
 
 echo "If all went according to plan, everything should now be installed properly!"
 echo "Please run the script student-install-software-ENG7006 as user student to complete installation."
