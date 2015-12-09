@@ -1,19 +1,23 @@
 #!/bin/sh
+echo "Setting up student user softare: first Ruby, then Jekyll."
+echo "This will take an extended moment. Please be patient."
 
 # set the bash profile to work with rbenv
+echo "Setting up the environment."
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 
 # install ruby using rbenv
+echo "Installing and setting up Ruby 2.2.3. This will take a long while."
 rbenv install 2.2.3
 # make the ruby we use the rbenv ruby (not system ruby)
 rbenv global 2.2.3
 # make absolute sure our shell is up to date and using the right ruby
 # this is almost certainly redundant
 rbenv rehash
-source ~/.bash_profile
 
+echo "Installing Jekyll."
 # install jekyll (it will install with current ruby)
 gem install jekyll
 
@@ -21,5 +25,10 @@ gem install jekyll
 source ~/.bash_profile
 
 # make sure these work the way they're supposed to
+echo "Checking installation of Ruby and Jekyll."
+echo "Ruby should be 2.2.3 (not 2.0.0!)."
 ruby -v
+echo "Jekyll should be installed at all."
 jekyll -v
+
+echo "If everything's gone according to plan, you now have a working Ruby and Jekyll installation."

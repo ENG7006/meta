@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# set up our sudo
+echo "Installing ENG 7006 software. First, we'll need an administrator password:"
+sudo echo "Thanks! Running script."
+
+# download and install Homebrew
+echo "Installing Homebrew."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# download Homebrew Cask
+echo "Installing Cask."
+brew install caskroom/cask/brew-cask
+
+# cask-install our five main gui apps;
+# we may have to enter an admin password at this stage
+echo "Installing Google Chrome."
+brew cask install google-chrome
+echo "Installing Atom."
+brew cask install atom
+echo "Installing GitHub Desktop."
+brew cask install github-desktop
+echo "Installing Slack."
+brew cask install slack
+echo "Installing p5.js."
+brew cask install p5
+
+# install the xcode cli tools, and a little applescript to avoid having to click buttons
+echo "Installing XCode CLI tools."
+xcode-select --install
+sleep 1
+osascript <<EOD
+  tell application "System Events"
+    tell process "Install Command Line Developer Tools"
+      keystroke return
+      click button "Agree" of window "License Agreement"
+    end tell
+  end tell
+EOD
+
+# install rbenv
+echo "Installing rbenv and ruby-build."
+brew install rbenv ruby-build
+
+# set the admin user's bash profile to work with rbenv, just because
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+source ~/.bash_profile
+
+# install other CLI tools
+echo "Installing node.js."
+brew install node
+echo "Installing the Heroku Toolbelt."
+brew install heroku-toolbelt
+
+echo "Copying scripts to student user."
+cp ./student-install-software-ENG7006 /Users/student/
+
+echo "If all went according to plan, everything should now be installed properly!"
+echo "Please run the script student-install-software-ENG7006 as user student to complete installation."
+echo "If you would like to use Jekyll as this user, please also run student-install-software-ENG7006 as this user."
+
+echo "BYE!"
