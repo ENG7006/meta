@@ -1,4 +1,4 @@
-### Lab 1
+# Lab 1: Getting Setup and Getting Started
 The first lab involves the following non-coding material:
 * Overview of the class website
 * Introduction to our software tools
@@ -16,6 +16,7 @@ Now, p5.js:
 * p5.js is primarily a graphics library
 * But we can write the simplest program ever in the IDE, which is everybody's first program: *Hello World!* (Or, if you're an English professor: *Hello, world!*)
 
+##### p5.js "blank" projects
 When we open a p5.js project, notice there's already some code in there for you. It looks like this:
 ```
 function setup () {
@@ -26,10 +27,10 @@ function draw () {
 
 }
 ```
-
 These two things,```setup()``` and ```draw()``` are, perhaps obviously, **functions**. Much of what we will do this semester is specify what happens in these two core p5.js functions. The code in ```setup()``` runs once (in the jargon: it is *called* once), at the very beginning of the program. The code in ```draw()``` runs over and over again, approximately 60 times per second. You can forget about that for now.
 
-Let's write our first Hello World!:
+##### Hello, world!
+Let's write our first Hello, world!:
 
 ```
 function setup () {
@@ -71,15 +72,17 @@ Let's dissect: ```text("Hello, world!", 20, 20);```
 * ```Hello, world!``` is the text itself, and there are quotation marks (```"```) around it; you could also use single quotes (```'```). These indicate that it's a string—as opposed to code.
 * The ```20```s indicate the x and y position of the text (hold onto this, we'll come back to it.)
 
-One additional note here:
-
 So I said before that p5.js is primarily about graphics, so the text is just a specific instance of a broader principle. Let's try a few alternatives, placing each of these in the ```setup()``` function in turn (or, all at once):
 
 * ```ellipse(40, 20, 10, 20);```
 * ```rect(40, 20, 10, 20);```
 * ```triangle(10, 10, 10, 40, 40, 10);```
 
-Now, you'll notice these is actually a super tiny area. That's because the default canvas that p5.js gives us is really small. Try:
+##### Geometry in p5.js
+Remember the cartesian graphs in middle and high school math? That's very similar to how we count geometry in p5.js (and in just about every computer graphics application ever). But, computers don't put the origin at the center, with positive and negative numbers running in each direction. Rather, the origin, (0, 0), is at the top left of any given window, and you count the number of pixels right and down from there. So (20, 40) is a point twenty pixels to the right of the left side of the window, and forty pixels down from the top of the window.
+
+##### The ```canvas```
+Now, you'll notice these three examples are bound to a tiny area. That's because the default canvas that p5.js gives us is really small (100, 100). Try:
 ```
 rect(20, 20, 400, 400);
 ```
@@ -95,10 +98,26 @@ function setup () {
 ```
 We've now added two new p5.js functions: ```createCanvas()``` and ```background()```. What do they do?
 
-There are few ways of thinking about this.
+##### Circles!
+Let's try one final first program, this one very common in p5.js, which does a slightly different thing:
+```
+function setup () {
+  createCanvas(600, 600);
+  background(100);
+}
 
-First, we can look up the [p5.js reference](http://p5js.org/reference/) for each of the functions: [createCanvas](http://p5js.org/reference/#/p5/createCanvas), [background](http://p5js.org/reference/#/p5/background), and [rect](http://p5js.org/reference/#/p5/rect).
+function draw() {
+  ellipse(mouseX, mouseY, 30, 30);
+}
+```
+Now, what do ```mouseX``` and ```mouseY``` do? They are **variables**: entities whose values can vary. You won't be dealing with them yourself until next week, but I want to float the concept now.
 
+No, but what do these things do? There are few ways of thinking about this.
+
+##### p5.js Reference
+First, we can look up the [p5.js reference](http://p5js.org/reference/) for each of the functions: [createCanvas](http://p5js.org/reference/#/p5/createCanvas), [background](http://p5js.org/reference/#/p5/background), and [rect](http://p5js.org/reference/#/p5/rect), as well as the two variables, [mouseX](http://p5js.org/reference/#/p5/mouseX) and [mouseY](http://p5js.org/reference/#/p5/mouseY).
+
+##### Comments
 Second, we might instead write our intentions next to each line of code, like this:
 ```
 /*
@@ -112,11 +131,12 @@ function setup () {
 ```
 What you see here after the code are **comments**, or human-readable bits that the JavaScript parser ignores. There are two ways of making comments. **Inline comments** are indicated by two slashes—```//```—and indicate that the rest of the line is a comment. A return will break you out of the comment. **Block comments** are indicated by slashes and asterisks. They begin with ```/*``` and end with ```*/```, and everything between these is skipped, no matter how long.
 
-Now, this is a bit like the "make me a sandwich" exercise: you'll have to break down your intentions into little itty bitty commands (function calls, expressions, and so on). Often, it helps if you write down your intentions line by line in comments.
+Now, this is a bit like the "make me a sandwich" exercise: you'll have to break down your intentions into little itty bitty commands (function calls, expressions, and so on). Often, to get everything as explicit as it needs to be, it helps a great deal if you write down your intentions line by line in comments, and only then write the code. Use an intermediate step between intention and code.
 
+##### Pseudocode
 The practice of describing to yourself your intentions in almost-code is a practice called writing **pseudocode**, and it will be enormously helpful as you learn to begin to code. I encourage you to write pseudocode for each line, or almost each line, of code in a comment. You can do it one of two ways: after the code, as above, or on the line before each line of code.
 
-We've met three different p5.js shapes: ```rect```, ```ellipse```, and ```triangle```. With a triangle, an ellipse, and a rectangle. With that we can draw a great many things! For the rest of lab, let's work on drawing a house.
+We've met three different p5.js shapes: ```rect```, ```ellipse```, and ```triangle```. With a triangle, an ellipse, and a rectangle. With that we can draw a great many things! For the rest of lab, let's work on drawing a house together.
 
 Finishing (and/or embellishing) the house will be one of your five daily assignments this week, along with two specific assignments and two non-specific assignments. Draw: a car, a rocket, something of your choosing that moves in some way, and something of your choosing that does not move. Don't worry about animating the moving things; that will be our task for next class.
 
@@ -193,3 +213,10 @@ function setup() {
 	ellipse(450, 100, 75, 75);
 }
 ```
+### Dailies
+There are five daily assignments this week:
+* Make your own house (feel free to copy and modify code, although it may well be easier to start from scratch)
+* Draw two additional shapes: a car, and a rocket.
+* Make two additional sketches: one thing that moves, and one thing that doesn't. You do not need to worry about animating them (yet).
+
+Note that you may want to experiment with [p5.js's other shapes](http://p5js.org/reference/#group-Shape): ```quad```, ```line```, ```arc```, and so on.
