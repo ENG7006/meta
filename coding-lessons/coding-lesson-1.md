@@ -27,7 +27,7 @@ function draw () {
 
 }
 ```
-These two things,```setup()``` and ```draw()``` are, perhaps obviously, **functions**. Much of what we will do this semester is specify what happens in these two core p5.js functions. The code in ```setup()``` runs once (in the jargon: it is *called* once), at the very beginning of the program. The code in ```draw()``` runs over and over again, approximately 60 times per second. You can forget about that for now.
+These two things,```setup()``` and ```draw()``` are, perhaps obviously, **functions**. Much of what we will do this semester is specify, in variously more and less complex ways, what happens in these two core p5.js functions. The code in ```setup()``` runs once (in the jargon: it is *called* once), at the very beginning of the program. The code in ```draw()``` runs over and over again, approximately 60 times per second. You can forget about that for now.
 
 ##### Hello, world!
 Let's write our first Hello, world!:
@@ -43,7 +43,7 @@ function draw () {
 ```
 Now press the play button. What happens? Our first program! It runs!
 
-But notice that in addition to the output in the frame at the bottom of the main coding window (this is called the **console**), we get an empty window, and a line of text in the console. The console is usually hidden from users; anybody loading this up in a browser would just see a blank window. So clearly, that's not the right way to go. How can we point the text at the user?
+But notice that in addition to the output in the frame at the bottom of the main coding window (this is called the **console**), we get an empty window, and a line of text in the console. The console is usually hidden from users, and used for programming purposes. (When debugging, you send yourself messages in the console.) Anybody loading this up in a browser would just see a blank window. So clearly, that's not the right way to go. How can we point the text at the user?
 
 Instead, let's try ```text("Hello, world!", 20, 20);```:
 
@@ -57,7 +57,7 @@ function draw () {
 }
 ```
 
-Let's take that apart: ```print()``` sends something out to what we call the console; ```text()``` sends text to our target graphics window. (Both, I should note, are functions that belong to p5.js.)
+Let's take that apart: ```print()``` sends something out to what we call the console; ```text()``` sends text to our target graphics window. (Both, I should note, are functions that belong to p5.js, and not to vanilla JavaScript.)
 
 What comes between the parentheses is the information that gets sent to different places. In JavaScript terms, ```print()``` and ```text()``` are **functions** or **methods**, and ```"Hello World!"``` and ```20``` are **parameters** or **arguments**. (Each pair are nearly exact synonyms; one thing about programming is that nobody agrees, quite, what to call things. In fact, there are subtle distinctions: parameter is the abstract term, while arguments are what are concretely passed into a function; function is the general term, and methods are functions that belong to an object. This distinction won't yet make sense, and for now you can treat them more or less as synonyms. I will use correct terminology, and if you have questions or confusions, please ask.)
 
@@ -83,7 +83,7 @@ Remember the cartesian graphs in middle and high school math? That's very simila
 
 ##### The ```canvas```
 Now, you'll notice these three examples are bound to a tiny area. That's because the default canvas that p5.js gives us is really small (100, 100). Try:
-```javacript
+```javascript
 rect(20, 20, 400, 400);
 ```
 The rectangle is cut off! What if we want to see more of our drawing? We need a bigger ```canvas```!
@@ -96,7 +96,7 @@ function setup () {
   rect(20, 20, 400, 400);
 }
 ```
-We've now added two new p5.js functions: ```createCanvas()``` and ```background()```. What do they do?
+We've now added two new p5.js functions: ```createCanvas()``` and ```background()```. What do they do? (What differences do you observe?)
 
 ##### Circles!
 Let's try one final first program, this one very common in p5.js, which does a slightly different thing:
@@ -112,7 +112,7 @@ function draw() {
 ```
 Now, what do ```mouseX``` and ```mouseY``` do? They are **variables**: entities whose values can vary. You won't be dealing with them yourself until next week, but I want to float the concept now.
 
-No, but what do these things do? There are few ways of thinking about this.
+No, but what do these things do? How might we find out? There are few ways of thinking about this.
 
 ##### p5.js Reference
 First, we can look up the [p5.js reference](http://p5js.org/reference/) for each of the functions: [createCanvas](http://p5js.org/reference/#/p5/createCanvas), [background](http://p5js.org/reference/#/p5/background), and [rect](http://p5js.org/reference/#/p5/rect), as well as the two variables, [mouseX](http://p5js.org/reference/#/p5/mouseX) and [mouseY](http://p5js.org/reference/#/p5/mouseY).
@@ -133,10 +133,12 @@ What you see here after the code are **comments**, or human-readable bits that t
 
 Now, this is a bit like the "make me a sandwich" exercise: you'll have to break down your intentions into little itty bitty commands (function calls, expressions, and so on). Often, to get everything as explicit as it needs to be, it helps a great deal if you write down your intentions line by line in comments, and only then write the code. Use an intermediate step between intention and code.
 
-##### Pseudocode
-The practice of describing to yourself your intentions in almost-code is a practice called writing **pseudocode**, and it will be enormously helpful as you learn to begin to code. I encourage you to write pseudocode for each line, or almost each line, of code in a comment. You can do it one of two ways: after the code, as above, or on the line before each line of code.
+**An implied consequence:** We'll delve into this more next week, but the existence of comments suggests that at least parts of code are meant to be read *by humans* and not by the computer. Code isn't only for the machines.
 
-We've met three different p5.js shapes: ```rect```, ```ellipse```, and ```triangle```. With a triangle, an ellipse, and a rectangle. With that we can draw a great many things! For the rest of lab, let's work on drawing a house together.
+##### Pseudocode
+The practice of describing to yourself your intentions in almost-code is a practice called writing **pseudocode**, and it will be enormously helpful as you learn to begin to code. I encourage you to write pseudocode for each line, or almost each line, of code. You can do this in a comment, or in a separate document. You can do it one of two ways: on the same line, after the code, as above, or on the line before each line of code.
+
+We've met three different p5.js shapes: ```rect```, ```ellipse```, and ```triangle```: triangles, ellipses, and rectangles. With that we can draw a great many things! For the rest of lab, let's work on drawing a house together.
 
 Finishing (and/or embellishing) the house will be one of your five daily assignments this week, along with two specific assignments and two non-specific assignments. Draw: a car, a rocket, something of your choosing that moves in some way, and something of your choosing that does not move. Don't worry about animating the moving things; that will be our task for next class.
 
@@ -217,6 +219,6 @@ function setup() {
 There are five daily assignments this week:
 * Make your own house (feel free to copy and modify code, although it may well be easier to start from scratch)
 * Draw two additional shapes: a car, and a rocket.
-* Make two additional sketches: one thing that moves, and one thing that doesn't. You do not need to worry about animating them (yet).
+* Make two additional sketches: one thing that moves, and one thing that doesn't. You do not need to worry about animating them (yet), but they should be things that move in reasonably simple ways (i.e. straight lines).
 
 Note that you may want to experiment with [p5.js's other shapes](http://p5js.org/reference/#group-Shape): ```quad```, ```line```, ```arc```, and so on.
