@@ -4,11 +4,11 @@
 
 #### Week 1
 ##### Seminar
-* Kate Hayles, from *How We Think*
+* N. Katherine Hayles, "How We Think," "Practices and Processes in Digital Media," and "The Digital Humanities" from *How We Think*
 * Ramsay and Rockwell, "Developing Things: Notes Towards an Epistemology of Building in the Digital Humanities"
 * Joanna Drucker, "Humanistic Theory and Digital Scholarship"
 
-##### Lab: Getting Started
+##### Lab: Getting Started with our software and p5.js
 * Getting hooked up
   * What is git? What is GitHub?
   * GitHub Desktop
@@ -24,15 +24,16 @@
 * Miriam Bratu Hansen, "Room-for-Play"
 * Mark B. N. Hansen, "On Some Motifs in Benjamin"
 
-##### Lab: p5.js and JavaScript Basics
-* Constructing, variables, methods: Balls
+##### Lab: p5.js and JavaScript basics: Balls
+* Variables, Functions, and Objects: Balls
 
 
 #### Week 3
 ##### Seminar: Marshall McLuhan: OG Media Theorist
 * Marshall McLuhan, *Understanding Media*, Part 1 and selections from Part 2.
 
-##### Lab: p5.
+##### Lab: p5.js and Iteration
+* Loops and Callbacks: Balls and Bubbles
 
 #### Week 4
 ##### Seminar: Friedrich Kittler: Beyond Representation
@@ -43,8 +44,8 @@
 #### Week 5
 ##### Seminar: Becoming Post/Human
 * Donna Haraway, "The Cyborg Manifesto"
-* Bernard Stiegler, *Technics and Time, vol. 1*
-* N. Katherine Hayles, from *How We Became Posthuman*
+* Bernard Stiegler, "General Introduction," "Technology and Anthropology," and "Who? What? The Invention of the Human" from *Technics and Time, vol. 1: The Fault of Epimetheus*.
+* Hayles, from *How We Became Posthuman*
 
 ##### Lab:
 
@@ -56,8 +57,8 @@
 ##### Lab: Topics!
 * Collisions
 And then either:
-* Catching ourselves up, **or**
-* Advanced topics (p5.js DOM, sound, examples from *The Nature of Code*)
+* Catching ourselves up, review **and/or**
+* Advanced topics
 
 #### Week 7
 ##### Seminar: Software Studies
@@ -65,6 +66,8 @@ And then either:
 * Wendy Hui-Kyong Chun, from *Programmed Visions*
 * Manovich, from *Software Takes Command*
 * John Simon, *Every Icon*
+* Patrick LeMieux, "[Histories of the Future](http://www.electronicbookreview.com/thread/electropoetics/Historicizing)"
+* John Simon, [*Every Icon* artist statement](http://numeral.com/articles/paraicon/paraicon.html)
 
 ##### Lab: Makey Makey
 * Critical and speculative design: read from *Speculative Everything*
@@ -95,9 +98,12 @@ And then either:
 ##### Project Due: Speculative Design
 
 #### Week 10
-##### Seminar: Difference
-* Lisa Nakamura, from *Digitizing Race*
-* Galloway, "Can the Whatever Speak?"
+##### Seminar: Materiality
+* Lisa Nakamura, "Indigenous Circuits"
+* Nicole Starosielski on undersea cables from *Siganal Traffic*
+* Jonathan Sterne from *Signal Traffic*
+* Matthew Kirschenbaum, from *Mechanisms*
+* Steven E. Jones, "Eversion" from *The Emergence of the Digital Humanities*
 
 ##### Lab: p5.js Gaming
 * Scenes, collisions, sprites, and libraries
@@ -110,30 +116,27 @@ And then either:
 ##### Project Due: Analytical Prototype
 
 #### Week 12
-##### Seminar: Materiality
-* Nicole Starosielski on undersea cables from *Siganal Traffic*
-* Jonathan Sterne from *Signal Traffic*
-* Matthew Kirschenbaum, from *Mechanisms*
-* Steven E. Jones, "Eversion" from *The Emergence of the Digital Humanities*
+##### Seminar: Networks
+* Galloway, "Network Pessimism"
+* Jagoda, "Network Ambivalence" and from *Network Aesthetics*
+* Kris Cohen, "Search Engine Subjectivities"
+* Scott C. Richmond, "Networked Boredom"
 
 ##### Lab: Deployment
 * Reviewing text processing
 * node.js, Heroku, socket.io
 
 #### Week 13
-##### Seminar: Networks
-* Galloway, "Network Pessimism"
-* Jagoda, "Network Ambivalence" and from *Network Aesthetics*
-* Kris Cohen, "Search Engine Subjectivities"
+##### Seminar: Atmospheres and Clouds
+* Tung Hui-hu, from *A Prehistory of the Cloud*
+* James J. Hodge, "Gifts of Ubiquity" and "Sociable Media"
 
 ##### Lab: Project Prep
 
 ##### Project Due: Twitter Bot
 
 #### Week 14
-##### Seminar: Atmospheres and Clouds
-* Tung Hui-hu, from *A Prehistory of the Cloud*
-* James J. Hodge, "Gifts of Ubiquity" and "Sociable Media"
+##### Seminar:
 
 ##### Lab: Drop-in lab
 
