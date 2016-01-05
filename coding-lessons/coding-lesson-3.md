@@ -6,7 +6,7 @@ Finally, and this will also take a long time to grok, **objects can inherit prop
 I'm not going to go into all the details here, but it is, like many of the things we have covered so far, at once both totally straightforward *and* difficult to really get. The ```house``` object we defined is a single object, and conceptually and behaviorally, while it can draw more than one house, it is still the same object, making two drawings of a house whose difference lies in mashing around its innards. That's not a bad conceptual model, actually, but it has limitations when you want to have more than a handful of things to be doing something.
 
 **Object prototypes** are objects, but they are, as they suggest, prototypes, or instructions on how to build more, similar objects. Object prototypes aren't just plain old objects (technical term: **object literals**). To build an object prototype, we need a special function: a **constructor** function, which, similar to ```setup()``` is called when you start building the object. And then instead of defining a ```house``` object, we instead define, in *exactly the same way*, a ```House.prototype``` object. Here's what ```house``` would look like as a prototypical object, or, in the convention, a ```House```.
-```
+```javascript
 var House = function (x) {
 	this.x = x;
 };

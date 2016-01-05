@@ -2,7 +2,7 @@
 
 ### The Problem with ```triangle```
 Let's take a look one of our basic p5.js shapes that we learned last time (and that you should be used to a bit by now), ```triangle```:
-```
+```javascript
 triangle(90, 300, 200, 200, 310, 300); // Draw the main roof
 ```
 This is the line of code from the example house where we drew a roof on the main house. Here we see a problem with p5.js (a problem it inherits from Processing, actually): long parameter lists. The comment tells us what we are doing, but not what all those numbers mean. This is especially bad since looking at six numbers in a row really isn't very easy to read, even for experienced coders. In fact, this is actually something like "bad programming practice": generally speaking, we should write functions with no more than four parameters, and, if that doesn't work, then we should at least use as few parameters as possible.
@@ -12,7 +12,7 @@ Let's tackle these problems in turn:
 
 **First,** ```90, 300, 200, 200, 310, 300``` doesn't help us one bit. It just isn't human readable. If we look at [the p5.js documentation for triangle](http://p5js.org/reference/#/p5/triangle), we will see that the general form of the call is ```triangle(x1, y1, x2, y2, x3, y3);```. This makes good sense, but it's still hard to see a list of six numbers and figure out what they do. So we might actually get closer to what the reference for ```triangle``` describes, by giving our numbers names, or, **assigning them to variables**. Which is to say, we don't need to use the numbers raw, but can give them human-readable names that make it easier to understand what our code is doing:
 
-```
+```javascript
 var firstX = 90;
 var firstY = 300;
 var secondX = 200;
@@ -32,7 +32,7 @@ Each variable declaration consists of four parts:
 
 ##### Declaring variables (and bugs to watch out for)
 The ```var``` keyword tells JavaScript that a variable declaration is coming. Technically speaking, with the ```var``` keyword, you don't need the assignment or the value. You could simply write: ```var firstX;``` That said, if you did that, you would end up with an "empty" variable, since it hasn't had any value assigned to it. Technically, its value when empty is actually ```undefined```, which is the source of perhaps the most common error you'll make: trying to do something to an ```undefined``` variable. Go ahead an test it now: in a new project, try to print an empty variable:
-```
+```javascript
 function setup () {
   createCanvas(400, 400);
   var foo;
@@ -40,7 +40,7 @@ function setup () {
 }
 ```
  p5.js doesn't complain, but it doesn't do anything either. You may also forget to declare a variable at all, in which case you'll get another very common error:
-```
+```javascript
 function setup () {
   createCanvas(400, 400);
   rect(foo, foo, foo, foo); // ##: Uncaught ReferenceError: foo is not defined
@@ -54,7 +54,7 @@ These are different, since ```undefined``` is technically a form of definition t
 ### A Problem: Build Two Houses (Or, **Refactoring**)
 So let's say we decided we wanted to make a second house with a second roof. Let's forget all the fancy stuff and just make some simple boxy houses:
 
-```
+```javascript
 function setup () {
   // ...
   rect(100, 300, 200, 200); // Draw the main structure
@@ -63,7 +63,7 @@ function setup () {
 }
 ```
 If we wanted to add a second house, we would, at this point, probably do something like this:
-```
+```javascript
 function setup () {
   createCanvas(600, 600); // We still need a canvas
 
@@ -99,7 +99,7 @@ So now, let's switch from the p5.js IDE to the rest of our development environme
 
 #### And now, back to the house
 Let's refactor this code to use some variables, and break it down step by step. First, let's make some names for the parts of the house:
-```
+```javascript
 var houseX = 100;
 var houseY = 300;
 var houseWidth = 200;
@@ -110,7 +110,7 @@ rect(houseX, houseY, houseWidth, houseHeight); // Draw a main structure
 There, isn't that better?
 
 Now, since the roof is relative to the house, let's do some fancy footwork, and instead of passing variables as parameters straight, we can write some **expressions** that express the dimensions and values of the roof relative to that of the structure of the house:
-```
+```javascript
 var roofHeight = 100;
 var roofPointX = 200;
 triangle(houseX - 10, houseY, roofPointX, houseY - roofHeight, houseX + houseWidth + 10, houseY); // Draw a main roof
@@ -122,7 +122,7 @@ Second, while there are variables here, and the ```rect``` is nice and readable,
 So now we have one house. How do we build the second house? We've built it by increasing the various ```x```es by 250 pixels.
 
 We can add this bewildering line of code:
-```
+```javascript
 houseX = houseX + 250;
 ```
 If you're wondering how something can be equal to itself plus some value—that's not what *equals* means—you're making lots of sense. You're remembering math class! Which is usually good. But you're forgetting that ```=``` is the *assignment* operator. It's not about equality in the algebraic sense, instead it's taking the value on the right and storing it under the name on the left. (Something that may or may not help: there's an **increment** operator, too, written like this: ```+=```. So you could rewrite this line as: ```houseX += 250;```, which also looks weird, but at least has the benefit of showing you that ```=``` isn't about *equality* but *assignment*.)
@@ -130,7 +130,7 @@ If you're wondering how something can be equal to itself plus some value—that'
 Note also that we can assign variables not only using strict numbers, but also *expressions*, even *expressions that include the variable itself*. The expression on the right is evaluated *first*, and then the result is assigned to the variable.
 
 So now, we can copy-and-paste most of our code above, and it will draw us a house 250px to the right:
-```
+```javascript
 rect(houseX, houseY, houseWidth, houseHeight); // Draw another main structure
 triangle(houseX - 10, houseY, roofPointX, houseY - roofHeight, houseX + houseWidth + 10, houseY); // Draw another roof
 ```
@@ -139,7 +139,7 @@ What are we missing?
 The roof point! How can we fix it?
 
 The best option is to figure out the **algorithm** for the roof point. Which is:
-```
+```javascript
 var roofPointX = houseX + houseWidth / 2;
 ```
 Replace our original **declaration** of roofPointX with this expression, and instead of being hard-coded, it's relative! Yay! And it works!
@@ -147,11 +147,11 @@ Replace our original **declaration** of roofPointX with this expression, and ins
 But only for the first house. Why?
 
 We can fix it two ways. We can increase ```roofPointX``` by 250, like ```houseX```: ```roofPointX = roofPointX + 250;``` Or, we can recalculate roofPointX with the new values once we increase ```houseX``` by writing an almost identical line of code: ```roofPointX = houseX + houseWidth / 2;```. (How is it different from its initial declaration?) Both work, and both suffer from the same problem, which is that they require this extra line of code to work; we can't just add 250 and be done with it. (Me, I want to add 250 and be done with it.) As far as we have it here, the way to fix it is actually to stop relying on the declaration of ```roofPointX``` to draw the roof, and instead to pass the algorithm expression into ```triangle```, so that each time, the function call reads:
-```
+```javascript
 triangle(houseX - 10, houseY, houseWidth / 2 + houseX, houseY - roofHeight, houseX + houseWidth + 10, houseY);
 ```
 Actually, both times, we have the same two lines of code repeated verbatim:
-```
+```javascript
 rect(houseX, houseY, houseWidth, houseHeight);
 triangle(houseX - 10, houseY, houseWidth / 2 + houseX, houseY - roofHeight, houseX + houseWidth + 10, houseY);
 ```
@@ -163,14 +163,14 @@ Here's a first principle in refactoring: **DRY**, or **don't repeat yourself**. 
 Effectively, in creating a function, we are giving a name to a block of code, so that when we want to invoke it, we don't have to repeat the instructions, instead, we can just tell JavaScript the name for that block of code. For example, ```drawHouse()```.
 
 So one thing we might do is this:
-```
+```javascript
 var drawHouse = function () {
   rect(houseX, houseY, houseWidth, houseHeight);
   triangle(houseX - 10, houseY, houseWidth / 2 + houseX, houseY - roofHeight, houseX + houseWidth + 10, houseY);
 };
 ```
 Where do we put this, though? One option is to declare it with all the other variables up at the top of ```setup()```. This is a good habit to form, declaring all your variables at the beginning of your functions:
-```
+```javascript
 function setup () {
   createCanvas(600, 600);
 
@@ -198,36 +198,36 @@ This means that you could draw as many houses as you like, in a bunch of differe
 
 #### Objects: I promise you, this makes things *less* complicated
 This ```drawHouse()``` solution hides the problem by tucking it away under a function, so that now you can see, after some preamble, that ```setup()``` draws two houses. But we still have that awful line of code lurking in our shiny new ```drawHouse()``` function:
-```
+```javascript
 triangle(houseX - 10, houseY, houseWidth / 2 + houseX, houseY - roofHeight, houseX + houseWidth + 10, houseY);
 ```
 How do we start? To tackle how to refactor that monstrosity, let's turn back to the first, really annoying line of code that doesn't really tell us anything, either, the original roof:
-```
+```javascript
 triangle(90, 300, 200, 200, 310, 300);
 ```
 It's less verbose, and possibly less vertiginous, but it sure isn't any more informative. Recall that our reference information says that the format is ```triangle(x1, y1, x2, y2, x3, y3);``` If you're thinking back to geometry class, you might recall that a triangle is a collection of three points, which usually get written (x, y). You might then think it will help you to write ```triangle((90, 300), (200, 200), (310, 300);```. This would indeed make it more readable! (Try it and see what happens.)
 
 #### Properties: how objects group variables together
 So that doesn't work. How can we group variables together in this way? **Objects**!!! In JavaScript, objects are, at least at this most fundamental level, dead simple. They are collections of **properties**, which is a specific kind of variable: properties are variables that belong to an object. To write objects, instead of grouping parameters together in parentheses, you group properties together with curly braces:
-```
+```javascript
 var firstCorner = { x: 90, y: 300 };
 ```
 Notice a few things about this line of code: inside an object's curly braces (in the jargon, we say, in **object literal**) notation, we use ```:``` instead of ```=``` to do assignment, and instead of semicolons to end lines, we just need commas to separate assignments.
 
 To access properties, you can use what is called "dot notation": put a dot after the name of the object, and then the name of the property. So actually, the following is equivalent to our object declaration above:
-```
+```javascript
 var firstCorner = {}; // Make an empty object, which means it has no properties
 firstCorner.x = 90; // Make a property, x, on firstCorner, and assign it the value of 90
 firstCorner.y = 300; // And y becomes 300
 ```
 It's less compact, but it does the identical thing. And in the same way that you can assign values in this way, you can also access them:
-```
+```javascript
 print(firstCorner.x); // 90
 print(firstCorner.y); // 300
 ```
 ##### Another whack at ```triangle```
 So: if we wanted to make our ```triangle``` easier to read (and oh my, do we want our code to be easier to read), you could do it this way:
-```
+```javascript
 var firstCorner = { x: 90, y: 300 };
 var secondCorner = { x: 200, y: 200 };
 var thirdCorner = { x: 310, y: 300 };
@@ -244,7 +244,7 @@ Third, **objects can contain other objects**, which may sound totally bonkers un
 
 So, with these ideas in mind, let's keep refactoring our house by making it its own object. We might decide that a house contains a roof and a structure. We might decide that a ```house``` object should somehow include a ```structure``` and a ```roof```. And finally, we might decide that it doesn't make much sense for ```setup()``` to have to know all about what we mean by a house, and so we can pull it out of ```setup()``` and give it its own domain.
 
-```
+```javascript
 var house = {
 	x: 100, // was houseX
 	y: 300, // was houseY
@@ -272,13 +272,13 @@ One thing to notice, which I can promise you will be a source of confusion, is a
 
 We've refactored our code to make things more readable in general, but we're not done yet, because we still (still!) have our terrible line of code with the triangle. So let's get things as dead simple as possible, and do the same thing we did before: pull out lines of code into separate functions. Let's take the two lines of ```draw()``` and  a ```drawStructure()``` method and a ```drawRoof()``` method. The first is easy:
 
-```
+```javascript
 drawStructure: function () {
   rect(this.x, this.y, this.width, this.height); // Draw a structure
 }
 ```
 The ```drawRoof()``` method, if we do it right, gets us to a nice, readable place by pulling the expressions out of parameters and assigning them to variables, according to the model above. Now, if we had done this in ```setup()``` this would have been awful and confusing, giving ourselves so many variables to worry about. But now, only the ```drawRoof()``` method needs to know about them:
-```
+```javascript
 drawRoof: function () {
   var leftEaves = {
     x: this.x - 10,
@@ -313,7 +313,7 @@ Fork the ball repo in GitHub, then in GitHub desktop, clone it to your git direc
 Here they are, more or less.
 
 Sketch.js:
-```
+```javascript
 function setup() {
   createCanvas(400, 400);
 }
@@ -326,7 +326,7 @@ function draw() {
 ```
 
 Ball.js:
-```
+```javascript
 var ball = {
   x: 20,
   y: 200,
@@ -368,7 +368,7 @@ The most important thing to notice is that we just started animating things. ```
 
 ### Conditions and Conditionals
 The most important one, which we're just introducing today, is a **condition**. Look at ```checkForBounce()```:
-```
+```javascript
 checkForBounce: function () {
   if (this.x > width - this.size / 2) this.bounce();
   if (this.x < this.size / 2) this.bounce();
@@ -398,7 +398,7 @@ Notes about MovableShape:
 2. Acceleration can happen linearly (adding a small amount to a ```delta``` in each ```update()``` or ```draw()```) or exponentially (multiplying ```delta``` by a small, fixed amount on each ```update```). For example, ```delta.x = delta.x + 0.25;``` or ```delta.x = delta.x * 1.05;```. In this last one, note ```*``` is the multiplication operator, and in much the same way ```x = x + 1;``` can be rewritten as ```x += 1;```, ```x = x * 0.25;``` can be rewritten as ```x *= 0.25;```.
 
 Sketch.js:
-```
+```javascript
 // give movableShape a nice, descriptive name to work with here
 // (i.e., replace myShape with something more descriptive.)
 var myShape = movableShape;  
@@ -420,7 +420,7 @@ draw = function() {
 };
 ```
 MovableShape.js:
-```
+```javascript
 var movableShape = {
 	// x and y indicate the current position of the shape
   // x and y can be offset in setup() to move the shape wherever you'd like it to go

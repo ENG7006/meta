@@ -18,7 +18,7 @@ Now, p5.js:
 
 ##### p5.js "blank" projects
 When we open a p5.js project, notice there's already some code in there for you. It looks like this:
-```
+```javascript
 function setup () {
 
 }
@@ -32,7 +32,7 @@ These two things,```setup()``` and ```draw()``` are, perhaps obviously, **functi
 ##### Hello, world!
 Let's write our first Hello, world!:
 
-```
+```javascript
 function setup () {
   print("Hello, world!");
 }
@@ -47,7 +47,7 @@ But notice that in addition to the output in the frame at the bottom of the main
 
 Instead, let's try ```text("Hello, world!", 20, 20);```:
 
-```
+```javascript
 function setup () {
   text("Hello, world!", 20, 20);
 }
@@ -83,13 +83,13 @@ Remember the cartesian graphs in middle and high school math? That's very simila
 
 ##### The ```canvas```
 Now, you'll notice these three examples are bound to a tiny area. That's because the default canvas that p5.js gives us is really small (100, 100). Try:
-```
+```javacript
 rect(20, 20, 400, 400);
 ```
 The rectangle is cut off! What if we want to see more of our drawing? We need a bigger ```canvas```!
 
 Before your draw statements, let's add a little bit of code:
-```
+```javascript
 function setup () {
   createCanvas(600, 600);
   background(100);
@@ -100,7 +100,7 @@ We've now added two new p5.js functions: ```createCanvas()``` and ```background(
 
 ##### Circles!
 Let's try one final first program, this one very common in p5.js, which does a slightly different thing:
-```
+```javascript
 function setup () {
   createCanvas(600, 600);
   background(100);
@@ -119,7 +119,7 @@ First, we can look up the [p5.js reference](http://p5js.org/reference/) for each
 
 ##### Comments
 Second, we might instead write our intentions next to each line of code, like this:
-```
+```javascript
 /*
   Define the p5.js setup function to draw a big rectangle
 */
@@ -144,7 +144,7 @@ Finishing (and/or embellishing) the house will be one of your five daily assignm
 First, let's draw a house and decompose it into its primitive shapes and make some decisions about the house we'd like to build. Let's begin it together.
 
 Here is one possible house sketch:
-```
+```javascript
 function setup() {
 	createCanvas(600, 600); // build us a canvas
 	background(0); // I think it should be night time
